@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 15px;
+            width: 150px;
+            background-color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="tst">
+        <span id="out"></span>
+    </div>
+    <script>
+        x = 0
+        let o = setInterval(abc, 100)
+        // clearInterval( )
+
+        function abc(){
+            x = x + 10
+            if(x==610){
+                clearInterval(o)
+            }
+            else{
+                document.getElementById('tst').style.width=x+"px"   
+                document.getElementById('out').innerHTML = x
+
+            }
+            // document.write(x)
+           
+            
+        } 
+         </script>
+</body>
+</html>
