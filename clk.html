@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="clock"></h1>
+    <script>
+        setInterval(displayClock, 1000)
+        function displayClock(){
+            let time = new Date()
+            var hours = time.getHours()
+            var minutes = time.getMinutes()
+            var seconds = time.getSeconds()
+            var ampm = ""
+
+            if (hours > 12){
+                hours = hours - 12;
+                ampm = "PM"
+            }
+            else{
+                ampm = "AM"
+            }
+
+            var clocktext = hours + ":" + minutes + ":"+seconds +" " +  ampm
+            document.getElementById('clock').innerHTML = clocktext
+
+        }
+    </script>
+</body>
+</html>
