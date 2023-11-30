@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e58f21a2be.js" crossorigin="anonymous"></script>
+
+    <style>
+        div{
+            background-color:white;
+            /* border: 2px solid black; */
+            border-bottom: 2px solid black;
+            display: inline-block;
+        
+        }
+        input{
+            background-color: transparent;
+            border: none;
+            font-size: 18px;
+            padding: 15px;
+        }
+        input:focus{
+            border: none;
+            outline: none;
+        }
+        span{
+            /* border-left: 2px solid black; */
+            padding: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <input type="password" id="pass" placeholder="Password">
+        <span onclick="abc()" id="ankh"><i class="fa-regular fa-eye"></i></span>
+    </div>
+    <!-- <input type="checkbox" id="check" onclick="abc()"> -->
+    <script>
+        function abc(){
+            var pass = document.getElementById('pass')
+            var ankh = document.getElementById('ankh')
+
+            if (pass.type == "password"){
+                pass.type="text";
+                ankh.innerHTML = '<i class="fa-regular fa-eye-slash"></i>'
+            }
+            else{
+                pass.type="password";
+                ankh.innerHTML='<i class="fa-regular fa-eye"></i>'
+            }
+
+        }
+    </script>
+</body>
+</html>
