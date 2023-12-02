@@ -1,17 +1,21 @@
-x = 5
-y = 6
-z = x + y
-print(z)
 
-def abc():
-    q = 4
-    w = 5
-    b = q + w
-    print(b)
+# def abc(name,age):
+#     print("Hello Sir",name)
+#     print("Your age is", age)
+# x = input("Enter  Your Name: ")
+# y = input(f"Sir {x} Enter Your Age: ")
+# abc(x,y)
+
+# while True:
+#     x = 1
+#     print(x)
 
 
-0
+# i = 1
+# while i < 6:
+#   print(i)
+#   i = i + 1
 
-p = 5
-
-# Indentation
+while True:
+    x = input(">>")
+    print(x) 
