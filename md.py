@@ -18,8 +18,8 @@
 # random 
 # os sys 
 # django 
-import random
-import pyautogui 
+# import random
+# import pyautogui 
 
 # print(x)
 # pip uninstall pyautogui 
